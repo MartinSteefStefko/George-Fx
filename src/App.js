@@ -23,7 +23,11 @@ function App() {
   }
 
   const filteredCurrency = currency.filter(
-    (currency) => currency.currency.includes(search)
+    (currency) =>
+      currency.currency &&
+      currency.nameI18N &&
+      currency.exchangeRate &&
+      currency.currency.includes(search)
 
     // currency.nameI18N.toLowerCase().includes(search.toLowerCase())
   )
@@ -42,17 +46,19 @@ function App() {
           />
         </form>
       </div>
+
       {filteredCurrency.map((currency) => {
-        // console.log(
-        //   'currency.exchangeRate.middle',
-        //   toString(currency.exchangeRate.middle)
-        // )
+        console.log('currency.currency', currency.currency)
+        console.log(
+          'currency.exchangeRate.middle',
+          currency.exchangeRate.middle
+        )
 
         return (
           <CurrencyItem
             key={currency.currency}
             name={currency.nameI18N}
-            // price={currency.exchangeRate.buy}
+            price={currency.exchangeRate.middle}
             symbol={currency.currency}
           />
         )
