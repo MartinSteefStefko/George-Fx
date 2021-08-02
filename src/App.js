@@ -27,7 +27,7 @@ function App() {
       currency.currency &&
       currency.nameI18N &&
       currency.exchangeRate &&
-      currency.currency.includes(search)
+      currency.currency.toLowerCase().includes(search.toLowerCase())
 
     // currency.nameI18N.toLowerCase().includes(search.toLowerCase())
   )
