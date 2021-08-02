@@ -34,9 +34,9 @@ function App() {
 
   return (
     <div className="currency-app">
-      <div className="currency-search">
-        <h1 className="currency-text">George FE Test</h1>
-        <p className="currency-text">Search a currency</p>
+      <h1 className="currency-text">George FE Test</h1>
+      <p className="currency-text">Search a currency</p>
+      <div className={'currency-search'}>
         <form>
           <input
             className="currency-input"
@@ -45,15 +45,9 @@ function App() {
             placeholder="Search"
           />
         </form>
+        {/* </div> */}
       </div>
-
       {filteredCurrency.map((currency) => {
-        console.log('currency.currency', currency.currency)
-        console.log(
-          'currency.exchangeRate.middle',
-          currency.exchangeRate.middle
-        )
-
         return (
           <CurrencyItem
             key={currency.currency}

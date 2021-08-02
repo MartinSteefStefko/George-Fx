@@ -7,8 +7,8 @@ const CurrencyItem = ({ name, price, symbol }) => {
       <div className="currency-row">
         <div className="currency">
           {/* <img src={image} alt="crypto" /> */}
-          <h1>{name}</h1>
           <p className="currency-symbol">{symbol}</p>
+          <h1>{name}</h1>
         </div>
         <div className="currency-data">
           <p className="currency-price">${price}</p>

@@ -17,17 +17,28 @@
   color: #fff;
 }
 
-.currency-search {
+/* .currency-search {
   margin-bottom: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-}
+} */
 
 .currency-text {
   margin-bottom: 32px;
   text-align: center;
+}
+
+.currency-search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin-bottom: 64px;
 }
 
 .currency-input {
