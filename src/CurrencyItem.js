@@ -11,7 +11,7 @@ const CurrencyItem = ({ name, price, symbol }) => {
           <h1>{name}</h1>
         </div>
         <div className="currency-data">
-          <p className="currency-price">${price}</p>
+          <p className="currency-price">€{price}</p>
         </div>
       </div>
     </div>

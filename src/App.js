@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
 import CurrencyItem from './CurrencyItem'
+import { countryToCurrency } from './constants/countryToCurrency'
 
 function App() {
   const [currency, setCurrency] = useState([])
@@ -21,6 +22,7 @@ function App() {
   const handleChange = (e) => {
     setSearch(e.target.value)
   }
+  // console.log('Country of USD', getKeyByValue(countryToCurrency, 'USD'))
 
   const filteredCurrency = currency.filter(
     (currency) =>
