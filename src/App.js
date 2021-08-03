@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
 import CurrencyItem from './CurrencyItem'
-import { countryToCurrency } from './constants/countryToCurrency'
+import { transformFx } from './helpers/transformFx'
 
 function App() {
   const [currency, setCurrency] = useState([])
@@ -14,7 +14,9 @@ function App() {
       .then((res) => {
         console.log(res.data.fx)
         setCurrency(res.data.fx)
-        // console.log(currency)
+        let transformedFx = transformFx(res.data.fx)
+        console.log('transformedFx', transformedFx)
+        console.log(transformedFx)
       })
       .catch((error) => console.log(error))
   }, [])

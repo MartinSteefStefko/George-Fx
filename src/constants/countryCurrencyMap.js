@@ -1,974 +1,1222 @@
-module.exports = {
-  Afghanistan: {
+export const countryCurrencyMap = [
+  {
+    name: 'Afghanistan',
     abbreviation: 'AF',
-    currency: 'USD',
+    currency: 'AFN',
   },
-  Albania: {
+  {
+    name: 'Åland Islands',
+    abbreviation: 'AX',
+    currency: 'EUR',
+  },
+  {
+    name: 'Albania',
     abbreviation: 'AL',
-    currency: 'USD',
+    currency: 'ALL',
   },
-  Algeria: {
+  {
+    name: 'Algeria',
     abbreviation: 'DZ',
     currency: 'DZD',
   },
-  'American Samoa': {
+  {
+    name: 'American Samoa',
     abbreviation: 'AS',
     currency: 'USD',
   },
-  Andorra: {
+  {
+    name: 'Andorra',
     abbreviation: 'AD',
     currency: 'EUR',
   },
-  Angola: {
+  {
+    name: 'Angola',
     abbreviation: 'AO',
-    currency: 'USD',
+    currency: 'AOA',
   },
-  Anguilla: {
+  {
+    name: 'Anguilla',
     abbreviation: 'AI',
-    currency: 'USD',
+    currency: 'XCD',
   },
-  Antarctica: {
+  {
+    name: 'Antarctica',
     abbreviation: 'AQ',
     currency: 'USD',
   },
-  'Antigua And Barbuda': {
+  {
+    name: 'Antigua And Barbuda',
     abbreviation: 'AG',
     currency: 'XCD',
   },
-  Argentina: {
+  {
+    name: 'Argentina',
     abbreviation: 'AR',
     currency: 'ARS',
   },
-  Armenia: {
+  {
+    name: 'Armenia',
     abbreviation: 'AM',
     currency: 'AMD',
   },
-  Aruba: {
+  {
+    name: 'Aruba',
     abbreviation: 'AW',
     currency: 'AWG',
   },
-  'Ascension Island': {
+  {
+    name: 'Ascension Island',
     abbreviation: 'AC',
     currency: 'USD',
   },
-  Australia: {
+  {
+    name: 'Australia',
     abbreviation: 'AU',
     currency: 'AUD',
   },
-  Austria: {
+  {
+    name: 'Austria',
     abbreviation: 'AT',
     currency: 'EUR',
   },
-  Azerbaijan: {
+  {
+    name: 'Azerbaijan',
     abbreviation: 'AZ',
-    currency: 'USD',
+    currency: 'AZN',
   },
-  Bahamas: {
+  {
+    name: 'Bahamas',
     abbreviation: 'BS',
-    currency: 'USD',
+    currency: 'BSD',
   },
-  Bahrain: {
+  {
+    name: 'Bahrain',
     abbreviation: 'BH',
     currency: 'BHD',
   },
-  Bangladesh: {
+  {
+    name: 'Bangladesh',
     abbreviation: 'BD',
     currency: 'BDT',
   },
-  Barbados: {
+  {
+    name: 'Barbados',
     abbreviation: 'BB',
     currency: 'BBD',
   },
-  Belarus: {
+  {
+    name: 'Belarus',
     abbreviation: 'BY',
-    currency: 'USD',
+    currency: 'BYN',
   },
-  Belgium: {
+  {
+    name: 'Belgium',
     abbreviation: 'BE',
     currency: 'EUR',
   },
-  Belize: {
+  {
+    name: 'Belize',
     abbreviation: 'BZ',
     currency: 'BZD',
   },
-  Benin: {
+  {
+    name: 'Benin',
     abbreviation: 'BJ',
-    currency: 'USD',
+    currency: 'XOF',
   },
-  Bermuda: {
+  {
+    name: 'Bermuda',
     abbreviation: 'BM',
-    currency: 'USD',
+    currency: 'BMD',
   },
-  Bhutan: {
+  {
+    name: 'Bhutan',
     abbreviation: 'BT',
     currency: 'BTN',
   },
-  Bolivia: {
+  {
+    name: 'Bolivia',
     abbreviation: 'BO',
-    currency: 'USD',
+    currency: 'BOB',
   },
-  'Bosnia And Herzegowina': {
+  {
+    name: 'Bosnia And Herzegowina',
     abbreviation: 'BA',
-    currency: 'USD',
+    currency: 'BAM',
   },
-  Botswana: {
+  {
+    name: 'Botswana',
     abbreviation: 'BW',
     currency: 'BWP',
   },
-  'Bouvet Island': {
+  {
+    name: 'Bouvet Island',
     abbreviation: 'BV',
-    currency: 'USD',
+    currency: 'NOK',
   },
-  Brazil: {
+  {
+    name: 'Brazil',
     abbreviation: 'BR',
     currency: 'BRL',
   },
-  'British Indian Ocean Territory': {
+  {
+    name: 'British Indian Ocean Territory',
     abbreviation: 'IO',
-    currency: 'USD',
+    currency: 'GBP',
   },
-  'Brunei Darussalam': {
+  {
+    name: 'Brunei Darussalam',
     abbreviation: 'BN',
     currency: 'BND',
   },
-  Bulgaria: {
+  {
+    name: 'Bulgaria',
     abbreviation: 'BG',
     currency: 'BGN',
   },
-  'Burkina Faso': {
+  {
+    name: 'Burkina Faso',
     abbreviation: 'BF',
-    currency: 'USD',
+    currency: 'XOF',
   },
-  Burundi: {
+  {
+    name: 'Burundi',
     abbreviation: 'BI',
-    currency: 'USD',
+    currency: 'BIF',
   },
-  Cambodia: {
+  {
+    name: 'Cambodia',
     abbreviation: 'KH',
-    currency: 'USD',
+    currency: 'KHR',
   },
-  Cameroon: {
+  {
+    name: 'Cameroon',
     abbreviation: 'CM',
     currency: 'XAF',
   },
-  Canada: {
+  {
+    name: 'Canada',
     abbreviation: 'CA',
     currency: 'CAD',
   },
-  'Cape Verde': {
+  {
+    name: 'Cape Verde',
     abbreviation: 'CV',
-    currency: 'USD',
+    currency: 'CVE',
   },
-  'Cayman Islands': {
+  {
+    name: 'Cayman Islands',
     abbreviation: 'KY',
-    currency: 'USD',
+    currency: 'KYD',
   },
-  'Central African Republic': {
+  {
+    name: 'Central African Republic',
     abbreviation: 'CF',
-    currency: 'USD',
+    currency: 'XAF',
   },
-  Chad: {
+  {
+    name: 'Chad',
     abbreviation: 'TD',
-    currency: 'USD',
+    currency: 'XAF',
   },
-  Chile: {
+  {
+    name: 'Chile',
     abbreviation: 'CL',
-    currency: 'USD',
+    currency: 'CLP',
   },
-  China: {
+  {
+    name: 'China',
     abbreviation: 'CN',
     currency: 'CNY',
   },
-  'Christmas Island': {
+  {
+    name: 'Christmas Island',
     abbreviation: 'CX',
-    currency: 'USD',
+    currency: 'AUD',
   },
-  'Cocos (Keeling) Islands': {
+  {
+    name: 'Cocos (Keeling) Islands',
     abbreviation: 'CC',
-    currency: 'USD',
+    currency: 'AUD',
   },
-  Colombia: {
+  {
+    name: 'Colombia',
     abbreviation: 'CO',
     currency: 'COP',
   },
-  Comoros: {
+  {
+    name: 'Comoros',
     abbreviation: 'KM',
-    currency: 'USD',
+    currency: 'KMF',
   },
-  Congo: {
+  {
+    name: 'Congo',
     abbreviation: 'CG',
-    currency: 'USD',
+    currency: 'XAF',
   },
-  "Congo, Democratic People's Republic": {
+  {
+    name: "Congo, Democratic People's Republic",
     abbreviation: 'CD',
-    currency: 'USD',
+    currency: 'CDF',
   },
-  'Cook Islands': {
+  {
+    name: 'Cook Islands',
     abbreviation: 'CK',
     currency: 'NZD',
   },
-  'Costa Rica': {
+  {
+    name: 'Costa Rica',
     abbreviation: 'CR',
     currency: 'CRC',
   },
-  "Cote d'Ivoire": {
+  {
+    name: "Cote d'Ivoire",
     abbreviation: 'CI',
     currency: 'XOF',
   },
-  'Croatia (local name: Hrvatska)': {
+  {
+    name: 'Croatia',
     abbreviation: 'HR',
     currency: 'HRK',
   },
-  Cuba: {
+  {
+    name: 'Cuba',
     abbreviation: 'CU',
-    currency: 'USD',
+    currency: 'CUC',
   },
-  Cyprus: {
+  {
+    name: 'Cyprus',
     abbreviation: 'CY',
     currency: 'EUR',
   },
-  'Czech Republic': {
+  {
+    name: 'Czech Republic',
     abbreviation: 'CZ',
     currency: 'CZK',
   },
-  Denmark: {
+  {
+    name: 'Denmark',
     abbreviation: 'DK',
     currency: 'DKK',
   },
-  Djibouti: {
+  {
+    name: 'Djibouti',
     abbreviation: 'DJ',
-    currency: 'USD',
+    currency: 'DJF',
   },
-  Dominica: {
+  {
+    name: 'Dominica',
     abbreviation: 'DM',
     currency: 'XCD',
   },
-  'Dominican Republic': {
+  {
+    name: 'Dominican Republic',
     abbreviation: 'DO',
     currency: 'DOP',
   },
-  'East Timor': {
+  {
+    name: 'East Timor',
     abbreviation: 'TP',
     currency: 'USD',
   },
-  Ecuador: {
+  {
+    name: 'Ecuador',
     abbreviation: 'EC',
     currency: 'USD',
   },
-  Egypt: {
+  {
+    name: 'Egypt',
     abbreviation: 'EG',
     currency: 'EGP',
   },
-  'El Salvador': {
+  {
+    name: 'El Salvador',
     abbreviation: 'SV',
-    currency: 'USD',
+    currency: 'SVC',
   },
-  'Equatorial Guinea': {
+  {
+    name: 'Equatorial Guinea',
     abbreviation: 'GQ',
     currency: 'USD',
   },
-  Eritrea: {
+  {
+    name: 'Eritrea',
     abbreviation: 'ER',
     currency: 'ERN',
   },
-  Estonia: {
+  {
+    name: 'Estonia',
     abbreviation: 'EE',
     currency: 'EUR',
   },
-  Ethiopia: {
+  {
+    name: 'Ethiopia',
     abbreviation: 'ET',
     currency: 'ETB',
   },
-  'Falkland Islands (Malvinas)': {
+  {
+    name: 'Falkland Islands (Malvinas)',
     abbreviation: 'FK',
     currency: 'FKP',
   },
-  'Faroe Islands': {
+  {
+    name: 'Faroe Islands',
     abbreviation: 'FO',
     currency: 'DKK',
   },
-  Fiji: {
+  {
+    name: 'Fiji',
     abbreviation: 'FJ',
     currency: 'FJD',
   },
-  Finland: {
+  {
+    name: 'Finland',
     abbreviation: 'FI',
     currency: 'EUR',
   },
-  France: {
+  {
+    name: 'France',
     abbreviation: 'FR',
     currency: 'EUR',
   },
-  'French Guiana': {
+  {
+    name: 'French Guiana',
     abbreviation: 'GF',
     currency: 'EUR',
   },
-  'French Polynesia': {
+  {
+    name: 'French Polynesia',
     abbreviation: 'PF',
-    currency: 'USD',
+    currency: 'XPF',
   },
-  'French Southern Territories': {
+  {
+    name: 'French Southern Territories',
     abbreviation: 'TF',
     currency: 'EUR',
   },
-  Gabon: {
+  {
+    name: 'Gabon',
     abbreviation: 'GA',
-    currency: 'USD',
+    currency: 'XAF',
   },
-  Gambia: {
+  {
+    name: 'Gambia',
     abbreviation: 'GM',
     currency: 'GMD',
   },
-  'Georgia (Sakartvelo)': {
+  {
+    name: 'Georgia',
     abbreviation: 'GE',
-    currency: 'USD',
+    currency: 'GEL',
   },
-  Germany: {
+  {
+    name: 'Germany',
     abbreviation: 'DE',
     currency: 'EUR',
   },
-  Ghana: {
+  {
+    name: 'Ghana',
     abbreviation: 'GH',
-    currency: 'GHC',
+    currency: 'GHS',
   },
-  Gibraltar: {
+  {
+    name: 'Gibraltar',
     abbreviation: 'GI',
-    currency: 'GBP',
+    currency: 'GIP',
   },
-  Greece: {
+  {
+    name: 'Greece',
     abbreviation: 'GR',
     currency: 'EUR',
   },
-  Greenland: {
+  {
+    name: 'Greenland',
     abbreviation: 'GL',
     currency: 'DKK',
   },
-  Grenada: {
+  {
+    name: 'Grenada',
     abbreviation: 'GD',
     currency: 'XCD',
   },
-  Guadeloupe: {
+  {
+    name: 'Guadeloupe',
     abbreviation: 'GP',
-    currency: 'USD',
+    currency: 'EUR',
   },
-  Guam: {
+  {
+    name: 'Guam',
     abbreviation: 'GU',
     currency: 'USD',
   },
-  Guatemala: {
+  {
+    name: 'Guatemala',
     abbreviation: 'GT',
     currency: 'GTQ',
   },
-  Guernsey: {
+  {
+    name: 'Guernsey',
     abbreviation: 'GG',
-    currency: 'GBP',
+    currency: 'GGP',
   },
-  Guinea: {
+  {
+    name: 'Guinea',
     abbreviation: 'GN',
-    currency: 'USD',
+    currency: 'GNF',
   },
-  'Guinea-Bissau': {
+  {
+    name: 'Guinea-Bissau',
     abbreviation: 'GW',
-    currency: 'USD',
+    currency: 'XAF',
   },
-  Guyana: {
+  {
+    name: 'Guyana',
     abbreviation: 'GY',
     currency: 'GYD',
   },
-  Haiti: {
+  {
+    name: 'Haiti',
     abbreviation: 'HT',
-    currency: 'USD',
+    currency: 'HTG',
   },
-  'Heard And Mc Donald Islands': {
+  {
+    name: 'Heard And Mc Donald Islands',
     abbreviation: 'HM',
-    currency: 'USD',
+    currency: 'AUD',
   },
-  Honduras: {
+  {
+    name: 'Honduras',
     abbreviation: 'HN',
     currency: 'HNL',
   },
-  'Hong Kong': {
+  {
+    name: 'Hong Kong',
     abbreviation: 'HK',
     currency: 'HKD',
   },
-  Hungary: {
+  {
+    name: 'Hungary',
     abbreviation: 'HU',
     currency: 'HUF',
   },
-  Iceland: {
+  {
+    name: 'Iceland',
     abbreviation: 'IS',
     currency: 'ISK',
   },
-  India: {
+  {
+    name: 'India',
     abbreviation: 'IN',
     currency: 'INR',
   },
-  Indonesia: {
+  {
+    name: 'Indonesia',
     abbreviation: 'ID',
     currency: 'IDR',
   },
-  'Iran (Islamic Republic Of)': {
+  {
+    name: 'Iran (Islamic Republic Of)',
     abbreviation: 'IR',
     currency: 'IRR',
   },
-  Iraq: {
+  {
+    name: 'Iraq',
     abbreviation: 'IQ',
-    currency: 'USD',
+    currency: 'IQD',
   },
-  Ireland: {
+  {
+    name: 'Ireland',
     abbreviation: 'IE',
     currency: 'EUR',
   },
-  'Isle of Man': {
+  {
+    name: 'Isle of Man',
     abbreviation: 'IM',
-    currency: 'GBP',
+    currency: 'IMP',
   },
-  Israel: {
+  {
+    name: 'Israel',
     abbreviation: 'IL',
     currency: 'ILS',
   },
-  Italy: {
+  {
+    name: 'Italy',
     abbreviation: 'IT',
     currency: 'EUR',
   },
-  Jamaica: {
+  {
+    name: 'Jamaica',
     abbreviation: 'JM',
     currency: 'JMD',
   },
-  Japan: {
+  {
+    name: 'Japan',
     abbreviation: 'JP',
     currency: 'JPY',
   },
-  'Jersey (Island)': {
+  {
+    name: 'Jersey (Island)',
     abbreviation: 'JE',
-    currency: 'GBP',
+    currency: 'JEP',
   },
-  Jordan: {
+  {
+    name: 'Jordan',
     abbreviation: 'JO',
     currency: 'JOD',
   },
-  Kazakhstan: {
+  {
+    name: 'Kazakhstan',
     abbreviation: 'KZ',
-    currency: 'USD',
+    currency: 'KZT',
   },
-  Kenya: {
+  {
+    name: 'Kenya',
     abbreviation: 'KE',
     currency: 'KES',
   },
-  Kiribati: {
+  {
+    name: 'Kiribati',
     abbreviation: 'KI',
-    currency: 'USD',
+    currency: 'KID',
   },
-  "Korea, Democratic People's Republic Of": {
+  {
+    name: "Korea, Democratic People's Republic Of",
     abbreviation: 'KP',
-    currency: 'USD',
+    currency: 'KPW',
   },
-  'Korea, Republic Of': {
+  {
+    name: 'Korea, Republic Of',
     abbreviation: 'KR',
-    currency: 'USD',
+    currency: 'KRW',
   },
-  Kuwait: {
+  {
+    name: 'Kuwait',
     abbreviation: 'KW',
     currency: 'KWD',
   },
-  Kyrgyzstan: {
+  {
+    name: 'Kyrgyzstan',
     abbreviation: 'KG',
-    currency: 'USD',
+    currency: 'KGS',
   },
-  "Lao People's Democratic Republic": {
+  {
+    name: "Lao People's Democratic Republic",
     abbreviation: 'LA',
-    currency: 'USD',
+    currency: 'LAK',
   },
-  Latvia: {
+  {
+    name: 'Latvia',
     abbreviation: 'LV',
-    currency: 'USD',
+    currency: 'EUR',
   },
-  Lebanon: {
+  {
+    name: 'Lebanon',
     abbreviation: 'LB',
     currency: 'LBP',
   },
-  Lesotho: {
+  {
+    name: 'Lesotho',
     abbreviation: 'LS',
-    currency: 'ZAR',
+    currency: 'LSL',
   },
-  Liberia: {
+  {
+    name: 'Liberia',
     abbreviation: 'LR',
-    currency: 'USD',
+    currency: 'LRD',
   },
-  'Libyan Arab Jamahiriya': {
+  {
+    name: 'Libyan Arab Jamahiriya',
     abbreviation: 'LY',
-    currency: 'USD',
+    currency: 'LYD',
   },
-  Liechtenstein: {
+  {
+    name: 'Liechtenstein',
     abbreviation: 'LI',
     currency: 'CHF',
   },
-  Lithuania: {
+  {
+    name: 'Lithuania',
     abbreviation: 'LT',
-    currency: 'USD',
+    currency: 'LTL',
   },
-  Luxembourg: {
+  {
+    name: 'Luxembourg',
     abbreviation: 'LU',
     currency: 'EUR',
   },
-  Macau: {
+  {
+    name: 'Macau',
     abbreviation: 'MO',
     currency: 'MOP',
   },
-  'Macedonia, The Former Yugoslav Republic Of': {
+  {
+    name: 'Macedonia, The Former Yugoslav Republic Of',
     abbreviation: 'MK',
     currency: 'MKD',
   },
-  Madagascar: {
+  {
+    name: 'Madagascar',
     abbreviation: 'MG',
-    currency: 'USD',
+    currency: 'MGA',
   },
-  Malawi: {
+  {
+    name: 'Malawi',
     abbreviation: 'MW',
     currency: 'MWK',
   },
-  Malaysia: {
+  {
+    name: 'Malaysia',
     abbreviation: 'MY',
     currency: 'MYR',
   },
-  Maldives: {
+  {
+    name: 'Maldives',
     abbreviation: 'MV',
-    currency: 'USD',
+    currency: 'MVR',
   },
-  Mali: {
+  {
+    name: 'Mali',
     abbreviation: 'ML',
-    currency: 'USD',
+    currency: 'XOF',
   },
-  Malta: {
+  {
+    name: 'Malta',
     abbreviation: 'MT',
     currency: 'EUR',
   },
-  'Marshall Islands': {
+  {
+    name: 'Marshall Islands',
     abbreviation: 'MH',
     currency: 'USD',
   },
-  Martinique: {
+  {
+    name: 'Martinique',
     abbreviation: 'MQ',
     currency: 'EUR',
   },
-  Mauritania: {
+  {
+    name: 'Mauritania',
     abbreviation: 'MR',
-    currency: 'USD',
+    currency: 'MRU',
   },
-  Mauritius: {
+  {
+    name: 'Mauritius',
     abbreviation: 'MU',
     currency: 'MUR',
   },
-  Mayotte: {
+  {
+    name: 'Mayotte',
     abbreviation: 'YT',
     currency: 'EUR',
   },
-  Mexico: {
+  {
+    name: 'Mexico',
     abbreviation: 'MX',
     currency: 'MXN',
   },
-  'Micronesia, Federated States Of': {
+  {
+    name: 'Micronesia, Federated States Of',
     abbreviation: 'FM',
     currency: 'USD',
   },
-  'Moldova, Republic Of': {
+  {
+    name: 'Moldova, Republic Of',
     abbreviation: 'MD',
-    currency: 'USD',
+    currency: 'MDL',
   },
-  Monaco: {
+  {
+    name: 'Monaco',
     abbreviation: 'MC',
     currency: 'EUR',
   },
-  Mongolia: {
+  {
+    name: 'Mongolia',
     abbreviation: 'MN',
-    currency: 'USD',
+    currency: 'MNT',
   },
-  Montserrat: {
+  {
+    name: 'Montserrat',
     abbreviation: 'MS',
     currency: 'XCD',
   },
-  Morocco: {
+  {
+    name: 'Morocco',
     abbreviation: 'MA',
     currency: 'MAD',
   },
-  Mozambique: {
+  {
+    name: 'Mozambique',
     abbreviation: 'MZ',
-    currency: 'USD',
+    currency: 'MZN',
   },
-  Myanmar: {
+  {
+    name: 'Myanmar',
     abbreviation: 'MM',
-    currency: 'USD',
+    currency: 'MMK',
   },
-  Namibia: {
+  {
+    name: 'Namibia',
     abbreviation: 'NA',
     currency: 'NAD',
   },
-  Nauru: {
+  {
+    name: 'Nauru',
     abbreviation: 'NR',
     currency: 'AUD',
   },
-  Nepal: {
+  {
+    name: 'Nepal',
     abbreviation: 'NP',
     currency: 'NPR',
   },
-  Netherlands: {
+  {
+    name: 'Netherlands',
     abbreviation: 'NL',
     currency: 'EUR',
   },
-  'Netherlands Antilles': {
+  {
+    name: 'Netherlands Antilles',
     abbreviation: 'AN',
     currency: 'ANG',
   },
-  'New Caledonia': {
+  {
+    name: 'New Caledonia',
     abbreviation: 'NC',
-    currency: 'USD',
+    currency: 'XPF',
   },
-  'New Zealand': {
+  {
+    name: 'New Zealand',
     abbreviation: 'NZ',
     currency: 'NZD',
   },
-  Nicaragua: {
+  {
+    name: 'Nicaragua',
     abbreviation: 'NI',
     currency: 'NIO',
   },
-  Niger: {
+  {
+    name: 'Niger',
     abbreviation: 'NE',
-    currency: 'USD',
+    currency: 'XOF',
   },
-  Nigeria: {
+  {
+    name: 'Nigeria',
     abbreviation: 'NG',
     currency: 'NGN',
   },
-  Niue: {
+  {
+    name: 'Niue',
     abbreviation: 'NU',
     currency: 'NZD',
   },
-  'Norfolk Island': {
+  {
+    name: 'Norfolk Island',
     abbreviation: 'NF',
     currency: 'AUD',
   },
-  'Northern Mariana Islands': {
+  {
+    name: 'Northern Mariana Islands',
     abbreviation: 'MP',
     currency: 'USD',
   },
-  Norway: {
+  {
+    name: 'Norway',
     abbreviation: 'NO',
     currency: 'NOK',
   },
-  Oman: {
+  {
+    name: 'Oman',
     abbreviation: 'OM',
     currency: 'OMR',
   },
-  Pakistan: {
+  {
+    name: 'Pakistan',
     abbreviation: 'PK',
     currency: 'PKR',
   },
-  Palau: {
+  {
+    name: 'Palau',
     abbreviation: 'PW',
     currency: 'USD',
   },
-  'Palestinian Territories': {
+  {
+    name: 'Palestinian Territories',
     abbreviation: 'PS',
-    currency: 'USD',
+    currency: 'ILS',
   },
-  Panama: {
+  {
+    name: 'Panama',
     abbreviation: 'PA',
     currency: 'PAB',
   },
-  'Papua New Guinea': {
+  {
+    name: 'Papua New Guinea',
     abbreviation: 'PG',
     currency: 'PGK',
   },
-  Paraguay: {
+  {
+    name: 'Paraguay',
     abbreviation: 'PY',
     currency: 'PYG',
   },
-  Peru: {
+  {
+    name: 'Peru',
     abbreviation: 'PE',
-    currency: 'USD',
+    currency: 'PEN',
   },
-  Philippines: {
+  {
+    name: 'Philippines',
     abbreviation: 'PH',
     currency: 'PHP',
   },
-  Pitcairn: {
+  {
+    name: 'Pitcairn',
     abbreviation: 'PN',
-    currency: 'USD',
+    currency: 'NZD',
   },
-  Poland: {
+  {
+    name: 'Poland',
     abbreviation: 'PL',
     currency: 'PLN',
   },
-  Portugal: {
+  {
+    name: 'Portugal',
     abbreviation: 'PT',
     currency: 'EUR',
   },
-  'Puerto Rico': {
+  {
+    name: 'Puerto Rico',
     abbreviation: 'PR',
     currency: 'USD',
   },
-  Qatar: {
+  {
+    name: 'Qatar',
     abbreviation: 'QA',
     currency: 'QAR',
   },
-  Reunion: {
+  {
+    name: 'Reunion',
     abbreviation: 'RE',
-    currency: 'USD',
+    currency: 'EUR',
   },
-  Romania: {
+  {
+    name: 'Romania',
     abbreviation: 'RO',
-    currency: 'USD',
+    currency: 'RON',
   },
-  Russia: {
+  {
+    name: 'Russia',
     abbreviation: 'RU',
     currency: 'RUB',
   },
-  Rwanda: {
+  {
+    name: 'Rwanda',
     abbreviation: 'RW',
-    currency: 'USD',
+    currency: 'RWF',
   },
-  'Saint Kitts And Nevis': {
+  {
+    name: 'Saint Kitts And Nevis',
     abbreviation: 'KN',
     currency: 'XCD',
   },
-  'Saint Lucia': {
+  {
+    name: 'Saint Lucia',
     abbreviation: 'LC',
     currency: 'XCD',
   },
-  'Saint Vincent And The Grenadines': {
+  {
+    name: 'Saint Vincent And The Grenadines',
     abbreviation: 'VC',
     currency: 'XCD',
   },
-  Samoa: {
+  {
+    name: 'Samoa',
     abbreviation: 'WS',
     currency: 'WST',
   },
-  'San Marino': {
+  {
+    name: 'San Marino',
     abbreviation: 'SM',
     currency: 'EUR',
   },
-  'Sao Tome And Principe': {
+  {
+    name: 'Sao Tome And Principe',
     abbreviation: 'ST',
-    currency: 'USD',
+    currency: 'STN',
   },
-  'Saudi Arabia': {
+  {
+    name: 'Saudi Arabia',
     abbreviation: 'SA',
     currency: 'SAR',
   },
-  Senegal: {
+  {
+    name: 'Senegal',
     abbreviation: 'SN',
-    currency: 'USD',
+    currency: 'XOF',
   },
-  'Serbia and Montenegro': {
+  {
+    name: 'Serbia and Montenegro',
     abbreviation: 'CS',
-    currency: 'EUR',
+    currency: 'CZK',
   },
-  Seychelles: {
+  {
+    name: 'Seychelles',
     abbreviation: 'SC',
-    currency: 'USD',
+    currency: 'SCR',
   },
-  'Sierra Leone': {
+  {
+    name: 'Sierra Leone',
     abbreviation: 'SL',
-    currency: 'USD',
+    currency: 'SLL',
   },
-  Singapore: {
+  {
+    name: 'Singapore',
     abbreviation: 'SG',
     currency: 'SGD',
   },
-  'Slovakia (Slovak Republic)': {
+  {
+    name: 'Slovakia',
     abbreviation: 'SK',
-    currency: 'USD',
+    currency: 'EUR',
   },
-  Slovenia: {
+  {
+    name: 'Slovenia',
     abbreviation: 'SI',
     currency: 'EUR',
   },
-  'Solomon Islands': {
+  {
+    name: 'Solomon Islands',
     abbreviation: 'SB',
     currency: 'SBD',
   },
-  Somalia: {
+  {
+    name: 'Somalia',
     abbreviation: 'SO',
-    currency: 'USD',
+    currency: 'SOS',
   },
-  'South Africa': {
+  {
+    name: 'South Africa',
     abbreviation: 'ZA',
     currency: 'ZAR',
   },
-  'South Georgia And The South Sandwich Islands': {
+  {
+    name: 'South Georgia And The South Sandwich Islands',
     abbreviation: 'GS',
-    currency: 'USD',
+    currency: 'GBP',
   },
-  Spain: {
+  {
+    name: 'Spain',
     abbreviation: 'ES',
     currency: 'EUR',
   },
-  'Sri Lanka': {
+  {
+    name: 'Sri Lanka',
     abbreviation: 'LK',
     currency: 'LKR',
   },
-  'St. Helena': {
+  {
+    name: 'St. Helena',
     abbreviation: 'SH',
-    currency: 'USD',
+    currency: 'SHP',
   },
-  'St. Pierre And Miquelon': {
+  {
+    name: 'St. Pierre And Miquelon',
     abbreviation: 'PM',
-    currency: 'USD',
+    currency: 'EUR',
   },
-  Sudan: {
+  {
+    name: 'Sudan',
     abbreviation: 'SD',
-    currency: 'USD',
+    currency: 'SDG',
   },
-  Suriname: {
+  {
+    name: 'Suriname',
     abbreviation: 'SR',
-    currency: 'USD',
+    currency: 'SRD',
   },
-  'Svalbard And Jan Mayen Islands': {
+  {
+    name: 'Svalbard And Jan Mayen Islands',
     abbreviation: 'SJ',
-    currency: 'USD',
+    currency: 'NOK',
   },
-  Swaziland: {
+  {
+    name: 'Swaziland',
     abbreviation: 'SZ',
     currency: 'SZL',
   },
-  Sweden: {
+  {
+    name: 'Sweden',
     abbreviation: 'SE',
     currency: 'SEK',
   },
-  Switzerland: {
+  {
+    name: 'Switzerland',
     abbreviation: 'CH',
     currency: 'CHF',
   },
-  'Syrian Arab Republic': {
+  {
+    name: 'Syrian Arab Republic',
     abbreviation: 'SY',
     currency: 'SYP',
   },
-  Taiwan: {
+  {
+    name: 'Taiwan',
     abbreviation: 'TW',
     currency: 'TWD',
   },
-  Tajikistan: {
+  {
+    name: 'Tajikistan',
     abbreviation: 'TJ',
-    currency: 'USD',
+    currency: 'TJS',
   },
-  'Tanzania, United Republic Of': {
+  {
+    name: 'Tanzania, United Republic Of',
     abbreviation: 'TZ',
     currency: 'TZS',
   },
-  Thailand: {
+  {
+    name: 'Thailand',
     abbreviation: 'TH',
     currency: 'THB',
   },
-  Togo: {
+  {
+    name: 'Togo',
     abbreviation: 'TG',
-    currency: 'USD',
+    currency: 'XOF',
   },
-  Tokelau: {
+  {
+    name: 'Tokelau',
     abbreviation: 'TK',
-    currency: 'USD',
+    currency: 'NZD',
   },
-  Tonga: {
+  {
+    name: 'Tonga',
     abbreviation: 'TO',
     currency: 'TOP',
   },
-  'Trinidad And Tobago': {
+  {
+    name: 'Trinidad And Tobago',
     abbreviation: 'TT',
     currency: 'TTD',
   },
-  Tunisia: {
+  {
+    name: 'Tunisia',
     abbreviation: 'TN',
     currency: 'TND',
   },
-  Turkey: {
+  {
+    name: 'Turkey',
     abbreviation: 'TR',
-    currency: 'USD',
+    currency: 'TRY',
   },
-  Turkmenistan: {
+  {
+    name: 'Turkmenistan',
     abbreviation: 'TM',
-    currency: 'USD',
+    currency: 'TMT',
   },
-  'Turks And Caicos Islands': {
+  {
+    name: 'Turks And Caicos Islands',
     abbreviation: 'TC',
     currency: 'USD',
   },
-  Tuvalu: {
+  {
+    name: 'Tuvalu',
     abbreviation: 'TV',
-    currency: 'USD',
+    currency: 'AUD',
   },
-  'U.S. Minor Outlying Islands': {
+  {
+    name: 'U.S. Minor Outlying Islands',
     abbreviation: 'UM',
     currency: 'USD',
   },
-  Uganda: {
+  {
+    name: 'Uganda',
     abbreviation: 'UG',
     currency: 'UGX',
   },
-  Ukraine: {
+  {
+    name: 'Ukraine',
     abbreviation: 'UA',
-    currency: 'USD',
+    currency: 'UAH',
   },
-  'United Arab Emirates': {
+  {
+    name: 'United Arab Emirates',
     abbreviation: 'AE',
     currency: 'AED',
   },
-  'United Kingdom': {
+  {
+    name: 'United Kingdom',
     abbreviation: 'UK',
     currency: 'GBP',
   },
-  'United States': {
+  {
+    name: 'United States',
     abbreviation: 'US',
     currency: 'USD',
   },
-  Uruguay: {
+  {
+    name: 'Uruguay',
     abbreviation: 'UY',
-    currency: 'USD',
+    currency: 'UYU',
   },
-  Uzbekistan: {
+  {
+    name: 'Uzbekistan',
     abbreviation: 'UZ',
-    currency: 'USD',
+    currency: 'UZS',
   },
-  Vanuatu: {
+  {
+    name: 'Vanuatu',
     abbreviation: 'VU',
     currency: 'VUV',
   },
-  'Vatican City State (Holy See)': {
+  {
+    name: 'Vatican City State (Holy See)',
     abbreviation: 'VA',
-    currency: 'USD',
+    currency: 'EUR',
   },
-  Venezuela: {
+  {
+    name: 'Venezuela',
     abbreviation: 'VE',
-    currency: 'VEB',
+    currency: 'VES',
   },
-  'Viet Nam': {
+  {
+    name: 'Viet Nam',
     abbreviation: 'VN',
-    currency: 'USD',
+    currency: 'VND',
   },
-  'Virgin Islands (British)': {
+  {
+    name: 'Virgin Islands (British)',
     abbreviation: 'VG',
     currency: 'USD',
   },
-  'Virgin Islands (U.S.)': {
+  {
+    name: 'Virgin Islands (U.S.)',
     abbreviation: 'VI',
     currency: 'USD',
   },
-  'Wallis And Futuna Islands': {
+  {
+    name: 'Wallis And Futuna Islands',
     abbreviation: 'WF',
-    currency: 'USD',
+    currency: 'XPF',
   },
-  'Western Sahara': {
+  {
+    name: 'Western Sahara',
     abbreviation: 'EH',
-    currency: 'USD',
+    currency: 'MAD',
   },
-  Yemen: {
+  {
+    name: 'Yemen',
     abbreviation: 'YE',
-    currency: 'USD',
+    currency: 'YER',
   },
-  Zambia: {
+  {
+    name: 'Zambia',
     abbreviation: 'ZM',
-    currency: 'USD',
+    currency: 'ZMW',
   },
-  Zimbabwe: {
+  {
+    name: 'Zimbabwe',
     abbreviation: 'ZW',
-    currency: 'USD',
+    currency: 'ZWL',
   },
-}
+]

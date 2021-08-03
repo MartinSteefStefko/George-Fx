@@ -3,6 +3,6 @@ export const countryCurrencyModel = {
   abbreviation: '',
   flag: this.name.toLowerCase() + '.png',
   currencySymbol: '',
-  currencyNameI18N: '',
-  currencyExchangeRate: '',
+  currencyNameI18N: getI18NNameFromSymbol(symbol),
+  currencyExchangeRate: getExchangeRateFromSymbol(symbol),
 }
