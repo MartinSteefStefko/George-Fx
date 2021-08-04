@@ -14,7 +14,6 @@ const removeUndefined = (obj) => {
 export const transformFx = (fxData) => {
   const map = countryCurrencyMap
   const clearedFxData = removeUndefined(fxData)
-  console.log('clearedFxData', clearedFxData)
 
   for (let i in map) {
     map[i].flag = map[i].abbreviation.toLowerCase() + '.png'

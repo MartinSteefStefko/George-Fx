@@ -1,9 +1,9 @@
-.currency-container {
+.country-container {
   display: flex;
   justify-content: center;
 }
 
-.currency-row {
+.country-row {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -13,7 +13,7 @@
   width: 900px;
 }
 
-.currency {
+.country {
   display: flex;
   align-items: center;
   padding-right: 24px;
@@ -21,12 +21,12 @@
   min-width: 300px;
 }
 
-.currency h1 {
+.country h1 {
   font-size: 16px;
   width: 150px;
 }
 
-.currency img {
+.country img {
   height: 30px;
   width: 30px;
   margin-right: 10px;
@@ -37,6 +37,9 @@
   margin-right: 30px;
 }
 
+.country-name{
+margin-left: 10px;
+}
 .currency-data {
   display: flex;
   text-align: right;
@@ -48,17 +51,6 @@
   width: 110px;
 }
 
-.currency-volume {
-  width: 155px;
-}
-
-.currency-marketcap {
-  width: 230px;
-}
-
-.currency-percent {
-  width: 100px;
-}
 
 .red {
   color: #f00606;
