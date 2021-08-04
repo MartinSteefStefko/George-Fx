@@ -16,7 +16,6 @@ function App() {
         setCurrency(res.data.fx)
         let transformedFx = transformFx(res.data.fx)
         console.log('transformedFx', transformedFx)
-        console.log(transformedFx)
       })
       .catch((error) => console.log(error))
   }, [])
